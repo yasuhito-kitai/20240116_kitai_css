@@ -1,12 +1,17 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100lvh;
+}
 
 header {
     display: flex;
     justify-content: space-between;
-    margin: 18px 20px 0px 20px;
+    margin: 23px 30px 0px 30px;
 }
 .title {
     color: navy;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 ul{
@@ -15,8 +20,8 @@ ul{
 }
 
 li {
-    font-size: 13px;
-    margin-left: 25px;
+    font-size: 17px;
+    margin-left: 32px;
 
 }
 
@@ -28,14 +33,15 @@ a{
 
 .main{
     position: relative;
+
 }
 
 .main__img {
     width: 50%;
     position: absolute;
-    top: auto;
+    bottom: 20%;
     right: 0;
-
+    z-index: 10;
 }
 
 .main__img img {
@@ -44,18 +50,20 @@ a{
 .main__copy {
     width: 75%;
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    top:420px;
+    bottom:0;
+    z-index: -10;
 }
 
 .main__copy__txt {
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .main__copy__card {
     background-color: navy;
-    height: 150px;
+    height: 200px;
     width: 100%;
+
 }
 
 
